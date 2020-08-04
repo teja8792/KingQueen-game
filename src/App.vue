@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld msg="Hello Vue in CodeSandbox!" />
+  <div id="app" class="page uk-background-primary uk-light">
+    <div class="uk-padding-small">
+      <h2 class="uk-text-center uk-logo">KingQueen</h2>
+    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld
-  }
+  components: {},
+  mounted() {}
 };
 </script>
 
 <style>
+@import url("uikit/dist/css/uikit.min.css");
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+.page {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 </style>
