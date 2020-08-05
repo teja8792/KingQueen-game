@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="page uk-background-primary">
     <div class="uk-padding-small uk-light">
-      <h2 class="uk-text-center uk-logo">KingQueen</h2>
+      <h2 class="uk-text-center uk-logo" @click="$router.push('/')">KingQueen</h2>
     </div>
     <router-view/>
   </div>
