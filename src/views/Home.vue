@@ -1,5 +1,5 @@
 <template>
-  <div class>
+  <div class="uk-light">
     <div class="uk-padding-small">
       <div class>
         <div>
